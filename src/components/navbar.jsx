@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { NavLink } from "react-router-dom";
-import { FaShoppingCart,FaPhone, FaTimes} from 'react-icons/fa'
+import { FaShoppingCart, FaPhone, FaTimes} from 'react-icons/fa'
 import {CgMenuLeft} from 'react-icons/cg'
 
 export const Navbar = () => {
@@ -22,21 +22,26 @@ export const Navbar = () => {
         </li>
       </ul>
 
+
       <div onClick={handleNav} className="md:hidden px-2 text-4xl z-10 cursor-pointer ">
          {!nav ? <CgMenuLeft /> : <FaTimes className="ml-[250px] text-3xl mt-[-40px]" />}
       </div>
       
+    
       
      {nav ? (
        <ul className=" md:hidden absolute  top-0 bg-white w-[300px] h-screen flex-col flex justify-center items-center duration-300">
 
-         <li className='py-6 text-4xl'>
+         <li className='hover:scale-110 duration-500 py-6 text-4xl'>
            <NavLink onClick={handleNav} to='/'  duration={900}>
             Shop
            </NavLink> 
          </li>
+         <li className="hover:scale-110 py-6 text-4xl duration-500 ">
+          <NavLink onClick={handleNav} to="/cart"> <FaShoppingCart size={52} /></NavLink>
+        </li>
     
-         <li className='mt-[-20px] flex py-12 text-2xl'>
+         <li className=' mt-[-20px] flex py-12 text-2xl'>
              
              <FaPhone className="text-green-500 " size={35}/> (77) 777-67-77
          </li>
