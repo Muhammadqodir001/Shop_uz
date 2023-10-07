@@ -21,7 +21,7 @@ const Footer =()=>{
                <ul>
                    <li className="py-1">(77) 777-67-77</li>
                    <li className="py-1"> Or get in touch via email address</li>
-                   <li className="py-1">uz_internetShop@777gmail.com</li>
+                   <li className="py-1">uz_internetShop777@gmail.com</li>
                </ul>
            </div>
            
