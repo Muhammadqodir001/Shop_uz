@@ -8,8 +8,9 @@ export const Navbar = () => {
  const [nav, setnav] = useState(false);
  const handleNav = () => setnav(!nav);
 
+ 
   return (
-    <div className="  w-full h-[100px] items-center flex justify  bg-gray-400">
+    <div className="  w-full h-[100px] items-center flex justify  bg-[#f5f0f0]">
       
       <ul className="hidden md:flex ml-[1350px] text-xl mr-[10px] space-x-10  text-black ">
 
@@ -30,7 +31,7 @@ export const Navbar = () => {
     
       
      {nav ? (
-       <ul className=" md:hidden absolute  top-0 bg-white w-[300px] h-screen flex-col flex justify-center items-center duration-300">
+       <ul className=" md:hidden absolute  top-0  w-[300px] h-screen flex-col flex justify-center items-center duration-300 bg-slate-400">
 
          <li className='hover:scale-110 duration-500 py-6 text-4xl'>
            <NavLink onClick={handleNav} to='/'  duration={900}>

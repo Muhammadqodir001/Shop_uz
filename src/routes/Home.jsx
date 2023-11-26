@@ -5,7 +5,7 @@ import Footer from '../components/footer'
 const Home = () => {
   return (
     <div>
-         <Shop />
+         <Shop/>
          <Footer/>
     </div>
   )

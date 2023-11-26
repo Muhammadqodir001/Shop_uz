@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { ShopContext } from "../../context/shop-context";
+import { ShopContext } from "../../components/shop-context";
 import { PRODUCTS } from "../../products";
 import { CartItem } from "./items_in_card";
 import { useNavigate } from "react-router-dom";
@@ -27,13 +27,17 @@ export const Cart = () => {
       {totalAmount > 0 ? (
         <div className="mt-[10px]">
           <p className="ml-[15px]"> Subtotal: ${totalAmount} </p>
-          < button className=" mt-[20px] w-[150px] h-[50px] border hover:text-white hover:bg-black rounded-lg" onClick={() => navigate("/")}> Continue Shopping </button>
-         
-          
+          < button className=" mt-[20px] w-[150px] h-[50px] border hover:text-white hover:bg-black rounded-lg" 
+              onClick={() => navigate("/")}> Continue Shopping 
+          </button>
+      
         </div>
       ) : (
-        <h1 className="mt-2 "> You have nothing in the card</h1>
-      )}
+         <h1 className="mt-2 "> You have nothing in the card</h1>
+       )}
     </div>
   );
 };
+
+
+

@@ -8,7 +8,7 @@ import Home from './routes/Home.jsx';
 
 
 import { Cart } from "./pages/cart/cart";
-import { ShopContextProvider } from "./context/shop-context";
+import { ShopContextProvider } from "./components/shop-context.jsx";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

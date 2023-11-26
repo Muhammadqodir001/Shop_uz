@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { ShopContext } from "../../context/shop-context";
+import { ShopContext } from "../../components/shop-context";
 
 export const CartItem = (props) => {
   const { id, productName, price, productImage } = props.data;
@@ -7,11 +7,11 @@ export const CartItem = (props) => {
     useContext(ShopContext);
 
   return (
-    <div className="cartItem md:hover:shadow-md md:shadow-none shadow-md shadow-slate-600 md:hover:shadow-slate-800 w-[450px] md:w-[600px] h-[300px] mt-10 rounded-md  flex items-center ">
-      <img className="w-[200px]" src={productImage} />
-      <div className="description text-4xl ">
+    <div className="cartItem  shadow-md shadow-slate-600 md:hover:shadow-slate-800 w-[300px] md:w-[600px] h-[450px] md:h-[300px] mt-10 rounded-md  flex items-center ">
+      <img className="w-[200px] md:mt-[0] mt-[-230px] md:ml-[20px]" src={productImage} />
+      <div className=" md:ml-[100px] md:mt-[0] mt-[200px] text-4xl ">
         <p>
-          <b className=" text-2xl">{productName}</b>
+          <b className=" flex  text-2xl">{productName}</b>
         </p>
         <p className="text-2xl "> Price: ${price}</p>
         <div className="countHandler text-center ">
